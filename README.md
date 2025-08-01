@@ -44,16 +44,22 @@ uv pip install -r requirements.txt
 ```
 chmod +x server.py
 ```
+.envにコピー
+```
+cp .env.sample .env
+```
+
+楽天APIに登録してアプリケーションIDを取得して, `RAKUTEN_APPLICATION_ID`にコピー
 
 グローバルユーザースコープで登録し、ユニバーサルアクセスを可能にする
 
 ```
-claude mcp add --scope user rakuten_item_mcp ~/.claude-mcp-servers/rakuten_item_mcp/.venv/bin/python ~/.claude-mcp-servers/rakuten_item_mcp/server.py
+claude mcp add --scope user rakuten-item-mcp ~/.claude-mcp-servers/rakuten-item-mcp/.venv/bin/python ~/.claude-mcp-servers/rakuten-item-mcp/server.py
 ```
 
 登録を解除
 ```
-claude mcp remove rakuten_item_mcp 
+claude mcp remove rakuten-item-mcp 
 ```
 
 登録を確認するには以下のコマンドを打ちます。
