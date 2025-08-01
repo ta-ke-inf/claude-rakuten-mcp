@@ -51,6 +51,11 @@ chmod +x server.py
 claude mcp add --scope user rakuten_item_mcp ~/.claude-mcp-servers/rakuten_item_mcp/.venv/bin/python ~/.claude-mcp-servers/rakuten_item_mcp/server.py
 ```
 
+登録を解除
+```
+claude mcp remove rakuten_item_mcp 
+```
+
 登録を確認するには以下のコマンドを打ちます。
 ```
 claude mcp list
